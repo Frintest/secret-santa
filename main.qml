@@ -27,6 +27,7 @@ Window {
                 anchors {
                     horizontalCenter: parent.horizontalCenter
                 }
+                color: '#747E7E'
 
                 Row {
                     id: footer__row
@@ -37,136 +38,45 @@ Window {
                     }
 
                     // ----- footer__btn -----
-                    Rectangle {
-                        id: footer__btn
-                        width: 75
-                        height: 75
-                        color: '#FF5F5D'
-                        radius: 100
+                    FooterBtn {
                         anchors {
                             left: parent.left
                             bottom: parent.bottom
                         }
 
-                        Image {
-                            id: footerBtn__icon
-                            width: 26
-                            source: 'qrc:/img/account.svg'
-                            fillMode: Image.PreserveAspectFit
-                            anchors {
-                               centerIn: parent
-                            }
-                        }
+                        btnWidth: 75
 
-                        MouseArea {
-                            anchors.fill: parent
-                            hoverEnabled: true
-
-                            Connections {
-                                onClicked: {
-                                    footer__btn.color = '#FF5F5D'
-                                }
-
-                                onEntered: {
-                                    footer__btn.color = '#E02A28'
-                                }
-
-                                onExited: {
-                                     footer__btn.color = '#FF5F5D'
-                                }
-                            }
-                        }
+                        iconSource: 'qrc:/img/account.svg'
+                        iconWidth: 30
                     }
 
 
-                    // ----- footer__btn2 -----
-                    Rectangle {
-                        id: footer__btn2
-                        width: 100
-                        height: 100
-                        color: '#FF5F5D'
-                        radius: 100
-
+                    // ----- footer__btn_big -----
+                    FooterBtn {
                         anchors {
                             horizontalCenter: parent.horizontalCenter
                             top: parent.top
                         }
 
-                        Image {
-                            id: footerBtn__icon2
-                            width: 50
-                            source: 'qrc:/img/home.svg'
-                            fillMode: Image.PreserveAspectFit
-                            anchors {
-                               centerIn: parent
-                            }
-                        }
+                        btnWidth: 100
 
-                        MouseArea {
-                            anchors.fill: parent
-                            hoverEnabled: true
-
-                            Connections {
-                                onClicked: {
-                                    footer__btn2.color = '#FF5F5D'
-                                }
-
-                                onEntered: {
-                                    footer__btn2.color = '#E02A28'
-                                }
-
-                                onExited: {
-                                     footer__btn2.color = '#FF5F5D'
-                                }
-                            }
-                        }
+                        iconSource: 'qrc:/img/home.svg'
+                        iconWidth: 52
                     }
 
 
-                    // ----- footer__btn3 -----
-                    Rectangle {
-                        id: footer__btn3
-                        width: 75
-                        height: 75
-                        color: '#FF5F5D'
-                        radius: 100
-
+                    // ----- footer__btn -----
+                    FooterBtn {
                         anchors {
-                           right: parent.right
-                           bottom: parent.bottom
+                            right: parent.right
+                            bottom: parent.bottom
                         }
 
-                        Image {
-                            id: footerBtn__icon3
-                            width: 28
-                            source: 'qrc:/img/create-session.svg'
-                            fillMode: Image.PreserveAspectFit
-                            anchors {
-                               centerIn: parent
-                            }
-                        }
+                        btnWidth: 75
 
-                        MouseArea {
-                            anchors.fill: parent
-                            hoverEnabled: true
-
-                            Connections {
-                                onClicked: {
-                                    footer__btn3.color = '#FF5F5D'
-                                }
-
-                                onEntered: {
-                                    footer__btn3.color = '#E02A28'
-                                }
-
-                                onExited: {
-                                     footer__btn3.color = '#FF5F5D'
-                                }
-                            }
-                        }
+                        iconSource: 'qrc:/img/account.svg'
+                        iconWidth: 28
                     }
-
-
                 }
             }
         }
