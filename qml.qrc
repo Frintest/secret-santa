@@ -1,6 +1,10 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
+<<<<<<< HEAD
+=======
+        <file>Element.qml</file>
+>>>>>>> origin/sherst
         <file>FooterBtn.qml</file>
     </qresource>
 </RCC>

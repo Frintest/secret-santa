@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>img/green.svg</file>
+        <file>img/red.svg</file>
+        <file>img/account.svg</file>
+        <file>img/create session.svg</file>
+        <file>img/home button.svg</file>
+    </qresource>
+</RCC>
