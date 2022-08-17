@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>Element.qml</file>
+        <file>FooterBtn.qml</file>
+    </qresource>
+</RCC>
