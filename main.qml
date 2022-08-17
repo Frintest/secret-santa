@@ -65,7 +65,7 @@ Window {
                     }
 
 
-                    // ----- footer__btn -----
+                    // ----- footer__btn ----
                     FooterBtn {
                         anchors {
                             right: parent.right
