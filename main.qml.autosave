@@ -51,7 +51,7 @@ Window {
                         height: header1.height
                         y:windMain.height/2
                         anchors.horizontalCenter: parent.horizontalCenter
-                        color: "black"
+                        color: "#747E7E"
                         // ----- footer__btn -----
                         FooterBtn {
                             anchors {
